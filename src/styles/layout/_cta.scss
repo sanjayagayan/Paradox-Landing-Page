@@ -1,0 +1,130 @@
+@use "../abstracts/variables" as *;
+
+.section-cta {
+  width: 100%;
+  background-color: $color-white;
+  padding: 0px 20px 100px 20px;
+  overflow: hidden;
+
+  @media (min-width: $bp-md) {
+    padding: 96px 80px;
+  }
+
+  &__container {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+
+    @media (min-width: $bp-md) {
+      flex-direction: row;
+      gap: 96px;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    @media (min-width: $bp-md) {
+      width: 41.6%; 
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: start;
+    }
+  }
+
+  &__title {
+    font-size: 48px;
+    line-height: 1.1;
+    font-weight: 700;
+    color: $color-dark;
+    margin-bottom: 24px;
+
+    @media (min-width: $bp-md) {
+      font-size: 60px;
+    }
+  }
+
+  &__description {
+    font-size: 18px;
+    color: $color-gray-500;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 448px;
+  }
+
+  &__form {
+    display: flex;
+    width: 100%;
+    max-width: 448px;
+    gap: 12px;
+  }
+
+  &__input {
+    flex: 1;
+    background-color: $color-gray-100;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 16px;
+    color: $color-gray-900;
+    outline: none;
+    font-family: inherit;
+
+    &:focus {
+      box-shadow: 0 0 0 2px $color-primary;
+    }
+  }
+
+  &__visual {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    @media (min-width: $bp-md) {
+      width: 58.3%; 
+      justify-content: flex-end;
+    }
+  }
+
+  &__image-wrapper {
+
+    @media (max-width: $bp-md){
+        display: none;
+    }
+
+    @media (min-width: $bp-md) {
+           position: relative;
+            width: 100%;
+            max-width: 700px;
+            animation: float 6s ease-in-out infinite;
+    }
+  }
+
+    &__image-wrapper2 {
+
+    @media (min-width: $bp-md) {
+        display: none;
+    }
+
+    @media (max-width: $bp-md) {
+        position: relative;
+        width: 100%;
+        max-width: 700px;
+        animation: float 6s ease-in-out infinite;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+  }
+}
+

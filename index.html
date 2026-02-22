@@ -62,6 +62,7 @@
 
     <main>
       <section class="hero">
+        <div class="hero__container">
           <div class="hero__content">
              <h1 class="hero__title">Paradox</h1>
              <p class="hero__description">
@@ -90,9 +91,45 @@
               </div>
             </div>
           </div>
+        </div>
       </section>
 
-      <section class="highlight">
+      <section class="section-cta">
+        <div class="section-cta__container">
+          
+          <div class="section-cta__content">
+            <h2 class="section-cta__title">
+              Go from 3D <br />
+              to website in <br />
+              no time.
+            </h2>
+            <p class="section-cta__description">
+              Without any effort, save a ton of time.
+            </p>
+
+            <form class="section-cta__form" onsubmit="event.preventDefault()">
+              <input 
+                type="email" 
+                placeholder="Email" 
+                class="section-cta__input" 
+                required 
+              />
+              <button type="submit" class="btn btn--primary section-cta__btn">
+                Sign Up
+              </button>
+            </form>
+          </div>
+
+          <div class="section-cta__visual">
+            <div class="section-cta__image-wrapper">
+              <img src="/src/assets/cta-image.avif" alt="3D Design Preview" class="section-cta__image" />
+            </div>
+            <div class="section-cta__image-wrapper2">
+              <img src="/src/assets/cta-image2.avif" alt="3D Design Preview" class="section-cta__image" />
+            </div>
+          </div>
+
+        </div>
       </section>
 
       <section class="features">
