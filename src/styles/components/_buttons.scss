@@ -47,3 +47,38 @@
   }
 }
 
+.btn {
+  padding: 12px 32px;
+  border-radius: 9999px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all $transition-base;
+  border: none;
+  font-family: inherit;
+
+  &--primary {
+    background: $color-primary;
+    color: white;
+    
+    &:hover {
+      background: color.adjust($color-primary, $lightness: 5%);
+    }
+  }
+
+  &--secondary{
+    display: none;
+
+    @media (min-width: $bp-md) {
+        display: inline-block;
+        background: rgba($color-gray-100, 0.5);
+        color: $color-dark;
+
+        &:hover {
+        background: $color-gray-900;
+        color: $color-white;
+        }
+    }
+  }
+
+}
+
