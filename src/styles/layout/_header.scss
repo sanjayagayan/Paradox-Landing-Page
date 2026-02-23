@@ -10,7 +10,7 @@
   justify-content: space-between;
   padding: 16px 20px;
   background: transparent;
-  border: 1px solid $color-gray-100;
+  border: 1px solid #ededed;;
 
   @media (min-width: $bp-md) {
     padding: 24px 40px;
@@ -65,7 +65,6 @@
   }
 }
 
-// Drawer & Overlay
 .drawer-container {
   .overlay {
     position: fixed;
